@@ -1,0 +1,199 @@
+/*-- grit framework common setting --*/
+.row {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0; /* remove strange right space from child inline-block elements*/
+}
+
+.col-constant-left {
+    height: 940px;
+    display: inline-block;
+}
+
+.row-product {
+    font-size: 0;
+}
+
+.row-product:not(:first-child) {
+    margin-top: 20px;
+}
+
+[class*="content-box-"] {
+    display: none;
+    margin-bottom: 20px;
+}
+
+[class*="col-content-"], [class*="col-product"] {
+    display: inline-block;
+}
+
+[class*="col-content-"] {
+    height: 320px;
+}
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
+/*-- fluid mobile landscape view -*/
+@media screen and (max-width: 767px) {
+    .content-box-mobile {
+        display: block;
+    }
+    .col-content-mobile-12 {
+        display: inline-block;
+        width: 100%;
+    }
+    .col-product-mobile-6 {
+        width: 49%;
+        height: 550px;
+    }
+    [class*="col-product-"]:not(:last-child) {
+        margin-right: 2%;
+    }
+}
+
+/*-- fluid tablet portrait view --*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .col-product {
+        width: 68%;
+    }
+    .row-product {
+        width: 100%;
+    }
+    .content-box-tablet {
+        display: block;
+    }
+    .col-constant-left {
+        width: 30%;
+        margin-right: 2%;
+    }
+    .col-content-tablet-6 {
+        display: inline-block;
+        width: 49%;
+    }
+    .col-product-tablet-4 {
+        width: 32%;
+        height: 300px;
+    }
+    [class*="col-"]:not(:last-child) {
+        margin-right: 2%;
+    }
+}
+
+/*-- fixed average desktop view, fixed tablet landscape view --*/
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .row {
+        width: 960px;
+    }
+    .content-box-tablet {
+        display: block;
+    }
+    .col-constant-left {
+        width: 300px;
+    }
+    .col-content-tablet-6 {
+        width: 470px;
+    }
+    .col-product-tablet-4 {
+        width: 200px;
+        height: 300px;
+    }
+    [class*="col-"]:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+/*-- fixed large desktop view --*/
+@media screen and (min-width: 1200px) {
+    .row {
+        width: 1200px;
+    }
+    .content-box-large {
+        display: block;
+    }
+    .col-constant-left {
+        width: 300px;
+    }
+    .col-content-large-3 {
+        width: 285px;
+    }
+    .col-product-large-3 {
+        width: 205px;
+        height: 300px;
+    }
+    [class*="col-"]:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+/*-- common background-color --*/
+header, .slider-box, footer {
+    background-color: #ffd800;
+}
+
+.logo, .search, .header-menu, .breadcrumbs, .footer-info,
+.col-dark-grey {
+    background-color: #5f5f5f;
+}
+.slider, .main-content,
+.col-light-grey {
+    background-color: #bcbcb9;
+}
+
+/*-- header style --*/
+.header-search {
+    height: 50px;
+    padding: 25px 0;
+}
+
+.header-menu {
+    height: 50px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.search {
+    width: 285px;
+}
+
+.logo, .search {
+    height: 100%;
+    display: inline-block;
+}
+
+/*-- slider style --*/
+.slider-box {
+    height: 340px;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+/*-- breadcrumbs --*/
+.breadcrumbs {
+    height: 35px;
+    margin: 20px auto;
+}
+
+/*-- breadcrumbs --*/
+.left-nav-mobile {
+    height: 300px;
+}
+
+/*-- content style --*/
+.main-content {
+    height: 420px;
+    margin-bottom: 20px;
+}
+
+/*-- footer style --*/
+footer {
+    height: 50px;
+}
+
